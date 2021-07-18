@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.box1 {
+    background-color: darkolivegreen;
+}
+.box2 {
+    background-color: darkorange;
+}
+ul {
+    list-style: none;
+}
+li {
+    float: left;
+}

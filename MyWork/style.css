@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+.body-body {
+  overflow: hidden;
+}
+.wrap {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+@media screen and (min-width: 650px) {
+  .wrap {
+    width: 827px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 270px;
+    align-items: center;
+  }
+
+  .header-right li:first-child {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .mein-title {
+    text-align: center;
+    margin-top: 10%;
+  }
+  .header-right ul li {
+    margin-left: 15px;
+  }
+  .main-visual img {
+    margin-left: 0;
+    height: 300px;
+  }
+  dl dt {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  dl dd {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .News dl dt {
+    padding-bottom: 0;
+  }
+  .News dl dd {
+    border: none;
+    padding-top: 0;
+  }
+}
+.header-right {
+  text-align: center;
+}
+.header-right li {
+  display: inline;
+  list-style: none;
+  margin-left: 30px;
+}
+.header-right li:first-child {
+  margin-left: 0;
+}
+.header-right ul li a {
+  text-decoration: none;
+  color: #333;
+}
+.header-right ul li.current a {
+  color: #f33135;
+}
+.header-right ul li a:hover {
+  color: #e7da66;
+}
+.main-visual img {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  min-height: 500px;
+  height: auto;
+}
+main {
+  margin-bottom: 10rem;
+}
+.title {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.row-2 {
+  margin-top: 5px;
+}
+dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+dt {
+  width: 20%;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-weight: normal;
+}
+dd {
+  width: 80%;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.News dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: solid 1px;
+}
+.News dt {
+  border-top: solid 1px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.News dd {
+  border-top: solid 1px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.Contact dl input {
+  width: 100%;
+}
+.Contact dl textarea {
+  width: 100%;
+  height: 10rem;
+}
+.submit-botan {
+  text-align: center;
+}
+.submit-botan input {
+  background-color: #333;
+  color: aliceblue;
+  height: 50px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+}
+.submit-botan input:hover {
+  background-color: darkgrey;
+}

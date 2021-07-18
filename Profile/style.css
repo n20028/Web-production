@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.logo {
+    height: 100px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: baseline;
+
+}
+header {
+    text-align: center;
+}
+header ul {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: 300px;
+}
+
+header ul li {
+    margin-left: 100px;
+    display: inline-block;
+    vertical-align: baseline;
+}
+header ul li:hover {
+    color: #02314c
+}
+
+.main_img {
+    width: 100%;
+    max-width: 1920px;
+    height: 600px;
+    object-fit: cover;
+}

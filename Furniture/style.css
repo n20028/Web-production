@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+body {
+  font-family: "Noto Sans Japanese", sans-serif;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+.wrapper {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+header {
+  padding: 10px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 45;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+.header-left h1 {
+  width: 180px;
+}
+.header-left img {
+  max-width: 100%;
+}
+.header-right-button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.header-right-button-border {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  background-color: #333;
+  transition: all 0.5s ease-out;
+  z-index: 99;
+}
+.open .header-right-button-border {
+  background-color: gray;
+}
+.header-right-button-border:nth-child(1) {
+  top: 10px;
+}
+.open .header-right-button-border:nth-child(1) {
+  transform: rotate(45deg);
+  top: 14px;
+}
+.header-right-button-border:nth-child(2) {
+  bottom: 10px;
+}
+.open .header-right-button-border:nth-child(2) {
+  transform: rotate(-45deg);
+  bottom: 14px;
+}
+.nav {
+  display: none;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding: 2% 5% 5% 2%;
+  color: aliceblue;
+}
+
+.nav li {
+  list-style: none;
+  margin-top: 10%;
+  font-weight: 300;
+}
+.nav li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+#mask {
+  display: none;
+}
+.open #mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+  z-index: 10;
+  cursor: pointer;
+}
+main {
+  width: 100%;
+  flex: 1;
+  padding: 0 40px;
+}
+
+footer {
+  padding-top: 100px;
+}
+.footer-content ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+.footer-content li {
+  list-style-type: none;
+  font-size: 0.8rem;
+  margin-left: 40px;
+}
+.footer-content li:first-child {
+  margin-left: 0;
+}
+.footer-content a {
+  text-decoration: none;
+  color: #333;
+}
+.footer-content p {
+  font-size: 0.6rem;
+}
+/* ここからIndex.htmlのmain*/ /*ここからProduct.htmlのcss*/
+.index {
+  padding: 0;
+  padding-top: 65px;
+  margin-bottom: 40px;
+}
+.show-content .col-md-3 {
+  padding: 10px 15px 20px 15px;
+}
+.show-content img {
+  max-width: 100%;
+}
+.show-text {
+  margin-top: 10px;
+}
+.show-content p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+#movepage {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 10px;
+}
+#movepage a {
+  text-decoration: none;
+  color: #333;
+}
+
+/*ここからProduct.htmlのcss*/
+.product {
+  padding: 0;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+#movepage ul {
+  display: flex;
+  justify-content: center;
+}
+#movepage li {
+  list-style: none;
+}
+#movepage li:last-child {
+  margin-left: 50px;
+}
+
+#movepage a {
+  text-decoration: none;
+  color: #333;
+}
+/*ここからabout.htmlのcss*/
+.about {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  max-width: 600px;
+}
+.about p {
+  line-height: 2;
+  font-size: 0.88rem;
+}
+/*ここからcompany.htmlのcss*/
+.company {
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  max-width: 600px;
+  font-size: 0.89rem;
+}
+.company dl {
+  display: flex;
+  height: 45px;
+  border-bottom: 1px solid rgb(204, 198, 198);
+}
+.company dl:last-child {
+  border: none;
+}
+.company dt {
+  width: 30%;
+  padding-left: 10px;
+  font-weight: 400;
+}
+.company dd {
+  width: 70%;
+}
+.map {
+  margin-top: 60px;
+}
+/*ここからitem$.htmlのcss*/
+.item {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  max-width: 800px;
+}
+.content {
+  padding: 0;
+  padding-top: 120px;
+  font-size: 0.9rem;
+}
+#product-title h1 {
+  font-size: 0.9rem;
+  font-weight: 350;
+}
+
+.item-img {
+  padding: 0;
+}
+.item-img img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
