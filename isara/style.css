@@ -1,0 +1,315 @@
+@charset "utf-8";
+
+body {
+  font-family: "Noto Sans Japanese", sans-serif;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+header {
+  padding: 5px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+}
+.wrapper {
+  max-width: 1165px;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-left {
+  display: flex;
+}
+.header-left p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.header-left img {
+  width: 128px;
+}
+.header-right a {
+  text-decoration: none;
+}
+.form-l {
+  background-color: #da6b64;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: aliceblue;
+  padding: 11px 40px;
+  border-radius: 30px;
+  letter-spacing: 2px;
+}
+.form-l:active {
+  background-color: #ac6d69;
+}
+.form-s {
+  display: none;
+}
+
+.main-visual {
+  padding-top: 50px;
+  height: 630px;
+  background-image: url(./img/main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-visual img {
+  width: 300px;
+}
+.main-visual-text h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+}
+.main-visual-text p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 20px;
+  margin-top: 40px;
+}
+.conversion {
+  padding-top: 30px;
+  background-color: #ebb94d;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+.conversion-top-text .backcolor {
+  display: inline;
+  padding: 0;
+  color: #d64c42;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.conversion-fist-text p {
+  line-height: 1rem;
+}
+.conversion-scholarship p {
+  line-height: 2.5rem;
+}
+.conversion a {
+  text-decoration: none;
+}
+.conversion-form {
+  margin: 50px auto;
+  background-color: #da6b64;
+  font-size: 2rem;
+  font-weight: 700;
+  color: aliceblue;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  max-width: 1080px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conversion-form:active {
+  background-color: #c07772;
+}
+.newline {
+  display: none;
+}
+.sns-box {
+  display: flex;
+  justify-content: center;
+}
+.good-button {
+  margin-left: 5px;
+}
+.introduction {
+  padding-top: 40px;
+  height: 600px;
+  background-image: url(./img/introbottom.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.introduction p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.introduction p:nth-child(2) {
+  margin-bottom: 0;
+}
+.introduction strong {
+  background: linear-gradient(transparent 70%, #ebb94d 20%);
+  font-weight: 700;
+}
+.subtitle {
+  max-width: 800px;
+  height: 100px;
+  margin: 30px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.subtitle-box {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.left-box {
+  left: 0;
+  top: 0;
+  border-top: 4px solid #ebb94d;
+  border-left: 4px solid #ebb94d;
+}
+.right-box {
+  right: 0;
+  bottom: 0;
+  border-bottom: 4px solid #ebb94d;
+  border-right: 4px solid #ebb94d;
+}
+.about-sorcle {
+  height: 80px;
+  width: 80px;
+  margin: -40px auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #ebb94d;
+}
+.start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	max-width: 280px;
+}
+.start img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 720px) {
+  header {
+    padding: 0;
+  }
+  .header-left {
+    flex-flow: column;
+    padding: 0 5px;
+  }
+  .header-left img {
+    width: 90px;
+    order: 1;
+  }
+  .header-left p {
+    margin-top: 0;
+  }
+  .form-l {
+    display: none;
+  }
+  .form-s {
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #da6b64;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px 10px 0 10px;
+  }
+  .form-s img {
+    max-width: 20px;
+    margin-bottom: 3px;
+  }
+  main {
+    margin-top: 60px;
+  }
+  .main-visual {
+    background-image: url(./img/mainsp.jpg);
+    height: 300px;
+  }
+  .main-visual img {
+    max-width: 300px;
+    width: 100%;
+  }
+  .main-visual-text h1 {
+    line-height: 3rem;
+  }
+  .newline {
+    display: block;
+  }
+  .sp-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .conversion-fist-text p {
+    line-height: 1rem;
+  }
+  .conversion-scholarship p {
+    line-height: 2rem;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .introduction {
+    background-size: contain;
+    background-position: bottom;
+    height: 650px;
+  }
+  .subtitle h2 {
+    line-height: 40px;
+  }
+  .subtitle-box {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+  }
+  .introduction p {
+    font-size: 1.5rem;
+    line-height: 25px;
+    margin-bottom: 2rem;
+  }
+  .introduction p:nth-child(2) {
+    margin-bottom: 2rem;
+  }
+  .about-sorcle {
+    height: 60px;
+    width: 60px;
+    margin: -30px auto;
+    font-size: 1.3rem;
+  }
+}
