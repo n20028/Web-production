@@ -9,6 +9,7 @@ body {
 header {
   padding: 5px 0;
   position: fixed;
+  z-index: 99;
   left: 0;
   top: 0;
   right: 0;
@@ -43,6 +44,9 @@ header {
   padding: 11px 40px;
   border-radius: 30px;
   letter-spacing: 2px;
+}
+.form-l:hover {
+  background-color: #d82519;
 }
 .form-l:active {
   background-color: #ac6d69;
@@ -116,11 +120,11 @@ header {
   justify-content: center;
   align-items: center;
 }
+.conversion-form:hover {
+  background-color: #d82519;
+}
 .conversion-form:active {
   background-color: #c07772;
-}
-.newline {
-  display: none;
 }
 .sns-box {
   display: flex;
@@ -147,6 +151,10 @@ header {
 .introduction strong {
   background: linear-gradient(transparent 70%, #ebb94d 20%);
   font-weight: 700;
+}
+/*使い回し*/
+.newline {
+  display: none;
 }
 .subtitle {
   max-width: 800px;
@@ -179,10 +187,20 @@ header {
   border-bottom: 4px solid #ebb94d;
   border-right: 4px solid #ebb94d;
 }
+/*ここまで*/
+.about {
+  padding: 0 20px 40px 20px;
+  background-color: #fef5e0;
+}
 .about-sorcle {
+  position: relative;
+  top: -40px;
+  display: flex;
+  justify-content: center;
+}
+.about-sorcle p {
   height: 80px;
   width: 80px;
-  margin: -40px auto;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -190,23 +208,206 @@ header {
   color: #fff;
   background-color: #ebb94d;
 }
-.start {
-	background: #FFF;
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 9000;
+.about-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
+.five-skills {
+  margin: 20px auto;
+  padding: 30px 0;
+  max-width: 1200px;
+  background-color: #fff;
+  border: 2px solid #ebb94d;
+  border-radius: 5px;
+}
+.five-skills-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.five-skills-img .img-text {
+  margin-left: 20px;
+}
+.five-skills-img .img-text:first-child {
+  margin-left: 0;
+}
+.step {
+  background-image: url(./img/aboutsecondbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0 100px 0;
+}
+.step-top-text {
+  color: #fff;
+  font-weight: 600;
+}
+.step-top-text h2 {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+.step-top-text p {
+  font-size: 1.3rem;
+}
+.yellow-span {
+  color: #ebb94d;
+}
+.step-conteiner {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.step-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 400px;
+  margin-left: 20px;
+  padding: 10px;
+  font-weight: 600;
+}
+.step-box:first-child {
+  margin-left: 0;
+}
+.step-back-p {
+  background-color: #ebb94d;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.step-smoll {
+  font-size: 0.9rem;
+}
+.step-footer {
+  height: 130px;
+  background-color: #016ea9;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.step-footer p {
+  margin-bottom: 0;
+}
+.learning {
+  margin: 5%;
+}
+.learning h2 {
+  font-size: 1.7rem;
+  margin: 4;
+}
+.learning-smoll {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.learning p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: 4%;
+}
+.learning p:last-child {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.learning-boxcover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+}
+.learning-box {
+  margin-left: 4%;
+  width: 15%;
+}
+.learning-box:first-child {
+  margin-left: 0;
+}
+.learning-box img {
+  width: 100%;
+}
+.merit {
+  background-color: #fef5e0;
+  padding: 30px 0 30px 0;
+}
+.subtitle-merit p {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.merit-boxcover {
+  display: flex;
+  justify-content: center;
+}
+.merit-box {
+  margin-left: 30px;
+  width: 24%;
+  text-align: justify;
+}
+.merit-box:first-child {
+  margin-left: 0;
+}
+.merit-box h3 {
+  color: #ebb94d;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.merit-box p {
+  font-weight: 300;
+}
+.merit-box img {
+  width: 100%;
+}
+.merit-box-backimg {
+  display: none;
+}
+.merit-more {
+  background-color: #fff;
+  border: 2px solid #ebb94d;
+  border-radius: 5px;
+  max-width: 1100px;
+  padding: 40px 10px 40px 10px;
+  margin: 0 auto;
+}
+.merit-more h3 {
+  font-weight: 600;
+  color: #ebb94d;
+  margin-bottom: 20px;
+}
+.merit-more h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.merit-more p {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.merit-note {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-top: 50px;
+}
+/*読み込み時にさいしょのフェードイン･アウト*/
+.start {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9000;
+}
+
 .start p {
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	display: none;
-	z-index: 9999;
-	max-width: 280px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
+  max-width: 280px;
 }
 .start img {
   width: 100%;
@@ -214,10 +415,22 @@ header {
 
 @media screen and (max-width: 1200px) {
   html {
-    font-size: 10px;
+    font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 720px) {
+  /*使い回し*/
+  .sp-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .newline {
+    display: block;
+  }
+  .noline {
+    display: none;
+  }
+  /**/
   header {
     padding: 0;
   }
@@ -269,13 +482,6 @@ header {
   .main-visual-text h1 {
     line-height: 3rem;
   }
-  .newline {
-    display: block;
-  }
-  .sp-wrapper {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
   .conversion-fist-text p {
     line-height: 1rem;
   }
@@ -307,9 +513,91 @@ header {
     margin-bottom: 2rem;
   }
   .about-sorcle {
-    height: 60px;
-    width: 60px;
-    margin: -30px auto;
     font-size: 1.3rem;
+    top: -30px;
+  }
+  .about-sorcle p {
+    width: 60px;
+    height: 60px;
+  }
+  .five-skills {
+    padding: 10px 0;
+  }
+  .five-skills-img img {
+    max-width: 30px;
+  }
+  .img-text {
+    margin-bottom: 10px;
+  }
+  .img-text:last-child {
+    margin-bottom: 0;
+  }
+  .dumy-box {
+    width: 100%;
+  }
+  .last-box img {
+    max-width: 60px;
+  }
+  .step {
+    background-image: url(./img/aboutsecondbgsp.jpg);
+  }
+  .step-conteiner {
+    flex-flow: column;
+  }
+  .step-box {
+    margin-left: 0;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 400px;
+    width: 100%;
+    font-size: 1.1rem;
+  }
+  .step-back-p {
+    margin-bottom: 10px;
+  }
+  .step-footer {
+    height: 100px;
+  }
+  .learning-box {
+    width: 50%;
+  }
+  .merit-boxcover {
+    flex-flow: column;
+  }
+  .merit-box {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .merit-box img {
+    display: none;
+  }
+  .merit-box-backimg {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    height: 120px;
+  }
+  .merit-box h3 {
+    text-align: center;
+  }
+  .merit-box p {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 1.1rem;
+  }
+  .mbb-1{
+    background-image: url(./img/learnfromfreelancer.jpg);
+  }
+  .mbb-2 {
+    background-image: url(./img/learnfromprojects.jpg);
+  }
+  .mbb-3 {
+    background-image: url(./img/actuallyfree.jpg);
+  }
+  .merit-note {
+    font-size: 1rem;
+    padding: 0 -5px 0 -5px;
   }
 }
