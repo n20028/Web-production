@@ -1,10 +1,14 @@
 @charset "utf-8";
 
 body {
-  font-family: "Noto Sans Japanese", sans-serif;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, Osaka,
+    "MS PGothic", sans-serif;
   display: flex;
   flex-flow: column;
   min-height: 100vh;
+}
+.body-body {
+  overflow: hidden;
 }
 header {
   padding: 5px 0;
@@ -54,7 +58,7 @@ header {
 .form-s {
   display: none;
 }
-
+/*class .main-visual */
 .main-visual {
   padding-top: 50px;
   height: 630px;
@@ -80,6 +84,7 @@ header {
   line-height: 20px;
   margin-top: 40px;
 }
+/*class conversion */
 .conversion {
   padding-top: 30px;
   background-color: #ebb94d;
@@ -133,6 +138,7 @@ header {
 .good-button {
   margin-left: 5px;
 }
+/*class introduction */
 .introduction {
   padding-top: 40px;
   height: 600px;
@@ -188,6 +194,7 @@ header {
   border-right: 4px solid #ebb94d;
 }
 /*ここまで*/
+/* class about */
 .about {
   padding: 0 20px 40px 20px;
   background-color: #fef5e0;
@@ -233,6 +240,7 @@ header {
 .five-skills-img .img-text:first-child {
   margin-left: 0;
 }
+/*class step*/
 .step {
   background-image: url(./img/aboutsecondbg.jpg);
   background-repeat: no-repeat;
@@ -278,7 +286,8 @@ header {
 .step-smoll {
   font-size: 0.9rem;
 }
-.step-footer {
+/*class step-footer  (class stepとはちがうdiv　わざと分けた　役割はstepのfooter)*/
+.sec-footer {
   height: 130px;
   background-color: #016ea9;
   font-size: 1.2rem;
@@ -288,9 +297,11 @@ header {
   justify-content: center;
   align-items: center;
 }
-.step-footer p {
+.sec-footer p {
   margin-bottom: 0;
+  letter-spacing: 2px;
 }
+/*class learning */
 .learning {
   margin: 5%;
 }
@@ -327,6 +338,7 @@ header {
 .learning-box img {
   width: 100%;
 }
+/*class merit */
 .merit {
   background-color: #fef5e0;
   padding: 30px 0 30px 0;
@@ -389,6 +401,201 @@ header {
   font-weight: 300;
   margin-top: 50px;
 }
+/* class member */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.member {
+  background-image: url(./img/teacherbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0 30px 0;
+  color: #fff;
+}
+.member-title {
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.member-title:nth-child(2) {
+  letter-spacing: 2px;
+}
+.member-boxcover {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.member-box {
+  width: 30%;
+}
+.member-box:first-child {
+  margin-right: 25px;
+}
+.member-box:last-child {
+  margin-left: 25px;
+}
+.member-box img {
+  width: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: -30px;
+}
+.member-box-text {
+  border: 3px solid #fff;
+  height: 400px;
+  width: 100%;
+  padding: 40px 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.member-ex {
+  text-align: justify;
+}
+/* class q-and-a */
+.q-and-a {
+  background-color: #ebb94d;
+  color: #fff;
+  padding: 40px 10px 20px 10px;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+}
+.q-and-a-sercle {
+  background-color: #fff;
+  color: #ebb94d;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.q-and-a-sercle p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.q-and-a .left-box {
+  left: 0;
+  top: 0;
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+}
+.q-and-a .right-box {
+  right: 0;
+  bottom: 0;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+}
+.q-and-a-say {
+  width: 50px;
+  height: 50px;
+  border: 25px solid transparent;
+  border-top-color: #ebb94d;
+  margin: 0 auto;
+}
+.question-mes-title {
+  margin-bottom: 40px;
+}
+.question-mes-title h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.question-mes-title p {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.question-mes-note {
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.companys {
+  margin: 40px 0 0 0;
+}
+.company-box {
+  margin: 0 auto;
+  display: flex;
+  width: 800px;
+  text-align: justify;
+  color: #777;
+  margin-bottom: 40px;
+}
+.company-box img {
+  width: 250px;
+  height: auto;
+  border: 2px solid #ebb94d;
+}
+.company-box-text {
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0 40px 0 40px;
+}
+.company-box u {
+  font-size: 1rem;
+}
+/* class contents */
+.contents {
+  background-image: url(./img/classbg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
+.contents-title {
+  color: #fff;
+  padding-bottom: 50px;
+}
+.contents-title h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.contents-title p {
+  font-weight: 600;
+}
+.contents p {
+  margin-bottom: 0;
+}
+.contents-boxcover {
+  display: flex;
+  justify-content: center;
+}
+.contents-box {
+  align-self: flex-start;
+  border: 2px solid #016ea9;
+  border-radius: 5px;
+  width: 400px;
+}
+.contents-box:last-child {
+  margin-left: 30px;
+}
+.contents-box-title {
+  padding: 20px 50px;
+  background-color: #016ea9;
+  color: #fff;
+}
+.contents-box-title h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.contents-box-content {
+  background-color: #fff;
+}
+.contents-box-content p {
+  padding: 10px 20px;
+  border-bottom: 1px dotted rgb(218, 216, 216);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.contents-box-content p:last-child {
+  border: none;
+}
 /*読み込み時にさいしょのフェードイン･アウト*/
 .start {
   background: #fff;
@@ -416,6 +623,10 @@ header {
 @media screen and (max-width: 1200px) {
   html {
     font-size: 0.7rem;
+  }
+  .company-box {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 720px) {
@@ -587,7 +798,7 @@ header {
     padding-right: 40px;
     font-size: 1.1rem;
   }
-  .mbb-1{
+  .mbb-1 {
     background-image: url(./img/learnfromfreelancer.jpg);
   }
   .mbb-2 {
@@ -599,5 +810,70 @@ header {
   .merit-note {
     font-size: 1rem;
     padding: 0 -5px 0 -5px;
+  }
+  .member {
+    font-size: 1.1rem;
+  }
+  .member-boxcover {
+    flex-flow: column;
+  }
+  .member-boxcover {
+    margin: 0;
+  }
+  .member-box {
+    width: 100%;
+  }
+  .member-box:first-child {
+    margin-right: 0;
+  }
+  .member-box:last-child {
+    margin-left: 0;
+  }
+  .member-box img {
+    width: 120px;
+  }
+  .member-box-text {
+    height: auto;
+    padding: 40px 15px 20px 15px;
+  }
+  .q-and-a-sercle {
+    width: 60px;
+    height: 60px;
+  }
+  .q-and-a-sercle p {
+    font-size: 1.2rem;
+  }
+  #q-and-a-title {
+    font-size: 1.3rem;
+  }
+  .question-mes-note {
+    font-size: 1rem;
+  }
+  .company-box {
+    width: 100%;
+  }
+  .company-box img {
+    width: 25%;
+    height: 100%;
+  }
+  .company-box-text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .company-box-text u {
+    letter-spacing: 3px;
+  }
+  .contents-boxcover {
+    flex-flow: column;
+  }
+  .contents-box {
+    width: 100%;
+  }
+  .contents-box:last-child {
+    margin: 20px 0 0 0;
+  }
+  .contents-box-title h3 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
   }
 }
