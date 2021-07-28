@@ -596,6 +596,88 @@ header {
 .contents-box-content p:last-child {
   border: none;
 }
+/* class flow */
+.fas {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.flow {
+  margin-top: 60px;
+}
+.flow h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+.flow-show-boxcover {
+  margin-top: 50px;
+}
+.flow-show-box {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 80px 30px 40px;
+  background-color: #fef5e0;
+  border-radius: 5px;
+}
+.flow-show-box-left {
+  width: 200px;
+  flex: none;
+}
+.flow-show-box-left img {
+  margin-bottom: 20px;
+}
+.flow-show-box-left p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+.flow-show-box-right {
+  text-align: justify;
+}
+.flow-show-box-right p {
+  font-weight: 300;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+.flow-show-box-right .weight-p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.flow-show-box-right p:last-child {
+  margin-bottom: 0;
+}
+.left-border-box {
+  height: 30px;
+  width: 800px;
+  margin: 0 auto;
+  border-left: 2px solid #ebb94d;
+}
+.right-border-box {
+  height: 30px;
+  width: 800px;
+  margin: 0 auto;
+  border-right: 2px solid #ebb94d;
+}
+.bottom-border-box {
+  height: 2px;
+  width: 800px;
+  margin: 0 auto;
+  border-bottom: 2px solid #ebb94d;
+}
+.open-tag {
+  width: 10px;
+  height: 10px;
+  border-top: 4px solid #000;
+  border-right: 4px solid #000;
+  transform: rotate(-45deg);
+  margin-left: auto;
+  cursor: pointer;
+}
+.trans {
+  transform: rotate(135deg);
+}
 /*読み込み時にさいしょのフェードイン･アウト*/
 .start {
   background: #fff;
@@ -875,5 +957,31 @@ header {
   .contents-box-title h3 {
     font-size: 1.5rem;
     letter-spacing: 2px;
+  }
+  .flow-show-box {
+    display: block;
+    padding: 10px;
+    width: 350px;
+    margin-bottom: 10px;
+  }
+  .flow-show-box-left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .flow-show-box-left p {
+    margin-left: 15px;
+    font-size: 1.4rem;
+  }
+  .flow-show-box-left p:nth-child(3) {
+    margin-left: 0;
+  }
+  .flow-show-box-left img {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+  }
+  .flow-show-box-right {
+    display: none;
   }
 }
