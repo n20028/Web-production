@@ -7,7 +7,7 @@ body {
   flex-flow: column;
   min-height: 100vh;
 }
-.body-body {
+#body-body {
   overflow: hidden;
 }
 header {
@@ -673,9 +673,7 @@ header {
   margin-left: auto;
   cursor: pointer;
 }
-.trans {
-  transform: rotate(135deg);
-}
+
 /* class why */
 .why {
   padding: 100px 100px 50px 100px;
@@ -788,6 +786,9 @@ header {
   word-break: break-all;
 }
 /* class mes */
+.mes {
+  margin: 50px 0;
+}
 .mes-boxcover {
   display: flex;
   width: 1200px;
@@ -851,6 +852,85 @@ header {
   color: #fff;
   font-size: 1.5rem;
   font-weight: 600;
+}
+/* class last-question */
+.last-question h2 {
+  text-align: center;
+  margin-top: 100px;
+}
+.last-ques-boxcontent {
+  max-width: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+.last-ques-box {
+  border: 1px solid rgb(209, 203, 203);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.last-ques-box p {
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.last-ques-box-down {
+  display: none;
+  margin: 2% 5px;
+  border-bottom: 1px dotted rgb(204, 201, 201);
+}
+.last-ques-box-down p {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.last-ques-box .open-tag {
+  width: 20px;
+  height: 20px;
+  border-top: 6px solid rgb(204, 201, 201);
+  border-right: 6px solid rgb(204, 201, 201);
+  transform: rotate(-45deg);
+  margin-left: auto;
+  margin-top: 5px;
+  cursor: pointer;
+}
+/* footer */
+footer {
+  background-color: #ececec;
+  font-size: 0.5rem;
+  margin-top: 100px;
+  padding: 30px 0;
+}
+footer a {
+  text-decoration: none;
+}
+
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ececec;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page-top .open-tag {
+  width: 20px;
+  height: 20px;
+  border-top: 6px solid #000;
+  border-right: 6px solid #000;
+  transform: rotate(-45deg);
+  margin-left: 0;
+  margin-top: 5px;
+  cursor: pointer;
+}
+/*後に読み込まないと反映しないから*/
+.trans {
+  transform: rotate(135deg);
 }
 /*読み込み時にさいしょのフェードイン･アウト*/
 .start {
@@ -1242,5 +1322,34 @@ header {
   }
   .mes-box:nth-child(2) p {
     margin-bottom: 30px;
+  }
+  .last-ques-boxcontent {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .last-ques-box p {
+    width: 80%;
+  }
+  #page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ececec;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #page-top .open-tag {
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    transform: rotate(-45deg);
+    margin-left: 0;
+    margin-top: 5px;
+    cursor: pointer;
   }
 }
