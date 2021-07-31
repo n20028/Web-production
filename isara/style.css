@@ -891,7 +891,6 @@ header {
   height: 20px;
   border-top: 6px solid rgb(204, 201, 201);
   border-right: 6px solid rgb(204, 201, 201);
-  transform: rotate(-45deg);
   margin-left: auto;
   margin-top: 5px;
   cursor: pointer;
