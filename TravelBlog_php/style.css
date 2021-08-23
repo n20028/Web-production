@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+.body-body {
+  overflow: hidden;
+}
+.main-cover {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wrap {
+  font-size: 0.9rem;
+  margin: 150px 0 0 0;
+}
+
+header {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  padding-top: 30px;
+  background-color: rgb(255, 255, 255);
+}
+.main-title {
+  width: 1200px;
+  margin: 0 auto;
+}
+.nav-cover {
+  background-color: #333;
+  width: 100vw;
+}
+nav {
+  width: 100vw;
+  background-color: #333;
+}
+nav ul {
+  width: 1200px;
+  margin: 0 auto;
+  font-size: smaller;
+  height: 40px;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  padding: 0 60px 0 0;
+}
+nav li a {
+  text-decoration: none;
+  color: beige;
+}
+main {
+  margin: 100px 0;
+}
+.visual-img img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.visual-img-a {
+  text-align: center;
+}
+.visual-img-a a {
+  color: #333;
+}
+
+/*.main-left {
+  background-color: aqua;
+}
+.main-right {
+  background-color: chocolate;
+}*/
+.article {
+  margin-top: 100px;
+}
+.article .visual-img p {
+  margin: 10px 40px;
+}
+.section {
+  text-align: center;
+}
+.section p {
+  text-align: left;
+}
+.autor img {
+  max-width: 35%;
+  border-radius: 50%;
+}
+h3 {
+  font-size: 1.3rem;
+  margin: 30px auto 20px auto;
+}
+.ranking {
+  margin-top: 30px;
+}
+.ranking img {
+  max-width: 100%;
+}
+
+footer {
+  background-color: rgb(247, 247, 247);
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  padding: 0 calc(50vw - 50%);
+}
+section {
+  margin: 20px;
+}
+.Archive-p {
+  margin-top: 40px;
+}
+.border-p p {
+  padding-left: 20px;
+  padding-top: 20px;
+  border-top: solid 1px #333;
+}
+.border-p a {
+  text-decoration: none;
+  color: #333;
+}
+.border-p:last-child {
+  border-bottom: solid 1px #333;
+}
+.About li {
+  position: relative;
+  padding-left: 10px;
+  list-style-type: none;
+}
+.About li:before {
+  content: "";
+  position: absolute;
+  top: 0.35em;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-width: 6px 0 6px 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent #333;
+}
+.copyright {
+  text-align: center;
+}
+@media screen and (max-width: 720px) {
+  .main-title {
+    margin: 15px 0 15px 5px;
+  }
+  nav {
+    overflow: auto;
+  }
+  nav ul {
+    width: 100%;
+    margin-left: 10px;
+  }
+  .wrap {
+    margin: 150px 10px 0 10px;
+  }
+}
